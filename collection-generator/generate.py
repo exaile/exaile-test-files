@@ -139,6 +139,7 @@ class CollectionGenerator(object):
         e = easyid3.EasyID3(dst)
         for k, v in attrs.items():
             e[k] = v
+        e.save(dst)
 
 
 if __name__ == '__main__':
